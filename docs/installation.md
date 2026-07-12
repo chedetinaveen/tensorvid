@@ -19,6 +19,14 @@ brew install ffmpeg pkg-config
 export PKG_CONFIG_PATH="/opt/homebrew/lib/pkgconfig"
 ```
 
+## Quick Install (PyPI)
+
+If you have the prerequisites installed, you can simply grab the source distribution from PyPI:
+
+```bash
+pip install tensorvid
+```
+
 ## Build from Source
 Ensure you are in an active Python virtual environment (`venv` or `conda`), then compile the extension:
 
