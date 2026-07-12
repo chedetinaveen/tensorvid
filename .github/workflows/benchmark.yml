@@ -38,15 +38,15 @@ jobs:
         with:
           components: clippy, rustfmt
 
-      - name: Install Python Dependencies
+      - name: Build Rust Extension
         run: |
-          python -m pip install --upgrade pip
-          pip install maturin torch torchvision numpy av
-
-      - name: Compile FastVideoLoader (Rust Core)
-        run: |
+          python -m venv .venv
+          source .venv/bin/activate
+          pip install maturin torch torchvision numpy av huggingface_hub
           maturin develop --release
           
-      - name: Run Benchmark Test
+      - name: Run Benchmark
         run: |
+          source .venv/bin/activate
+          cd benchmarks
           python benchmark.py

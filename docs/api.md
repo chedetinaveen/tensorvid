@@ -7,7 +7,7 @@ TensorVid provides an iterable dataset wrapper out-of-the-box that seamlessly in
 
 ```python
 import torch
-from loader import FastVideoDataset
+from tensorvid import FastVideoDataset
 
 # 1. Instantiate the dataset backend
 dataset = FastVideoDataset(
