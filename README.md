@@ -30,6 +30,9 @@ pip install maturin torch numpy
 maturin develop --release
 ```
 
+> **macOS Homebrew Note**: If `pip` crashes with a `pyexpat` or `libexpat` error, it is a known bug in Homebrew Python. You must prioritize the Homebrew `expat` library by running this before your Python commands:
+> `export DYLD_LIBRARY_PATH="/opt/homebrew/opt/expat/lib:$DYLD_LIBRARY_PATH"`
+
 ## Quick Start
 
 ```python

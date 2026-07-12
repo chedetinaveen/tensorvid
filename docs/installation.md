@@ -37,6 +37,11 @@ maturin develop --release
 
 This compiles the Rust backend and seamlessly exposes the `tensorvid` module to your Python environment.
 
+!!! warning "macOS Homebrew Bug"
+    If `pip` crashes with a `pyexpat` or `libexpat` error, it is a known bug in Homebrew Python. You must prioritize the Homebrew `expat` library by running this before your Python commands:
+    
+    `export DYLD_LIBRARY_PATH="/opt/homebrew/opt/expat/lib:$DYLD_LIBRARY_PATH"`
+
 ## Docker Setup
 For guaranteed compatibility, use the provided Dockerfile which isolates the Linux FFmpeg headers:
 
