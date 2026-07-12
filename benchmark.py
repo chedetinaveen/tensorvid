@@ -136,4 +136,5 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"PyAV failed to read video: {e}")
         
+
     run_fast_benchmark(VIDEO_PATHS, BATCH_SIZE, TOTAL_BATCHES)
