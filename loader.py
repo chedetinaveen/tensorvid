@@ -1,5 +1,6 @@
 import torch
-from fast_video_loader import VideoLoader
+import math
+from tensorvid import VideoLoader
 
 class FastVideoDataset(torch.utils.data.IterableDataset):
     def __init__(self, video_path: str, batch_size: int, height: int, width: int):

@@ -140,7 +140,7 @@ fn decode_loop(
 }
 
 #[pymodule]
-fn fast_video_loader(_py: Python, m: &PyModule) -> PyResult<()> {
+fn tensorvid(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_class::<VideoLoader>()?;
     Ok(())
 }

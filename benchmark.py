@@ -9,6 +9,7 @@ from torch.utils.data import DataLoader
 # Try importing our fast video loader
 try:
     from loader import FastVideoDataset
+    import tensorvid
 except ImportError:
     print("⚠️ FastVideoDataset could not be imported.")
     FastVideoDataset = None
