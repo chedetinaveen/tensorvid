@@ -9,7 +9,14 @@ By bridging `ffmpeg-next` (C/Rust) directly to `ndarray` and `PyO3`, TensorVid b
 
 ## Installation
 
-You can install TensorVid directly from PyPI. Note that because this is a source distribution wrapping C-libraries, you **must** have the native FFmpeg C-headers and the Rust compiler installed on your system before running `pip install`.
+### Pre-compiled Binaries (Conda) - Coming Soon
+The absolute easiest way to install TensorVid across all platforms (Windows, macOS, Linux) without needing to install C-compilers is via `conda-forge`:
+```bash
+conda install -c conda-forge tensorvid
+```
+
+### PyPI (Source Distribution)
+You can also install TensorVid directly from PyPI. Note that because this is a source distribution wrapping C-libraries, you **must** have the native FFmpeg C-headers and the Rust compiler installed on your system before running `pip install`.
 
 ```bash
 pip install tensorvid

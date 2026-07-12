@@ -17,11 +17,17 @@ sudo apt-get update && sudo apt-get install -y \
 ```bash
 brew install ffmpeg pkg-config
 export PKG_CONFIG_PATH="/opt/homebrew/lib/pkgconfig"
+## The Easiest Way: Conda-Forge (Coming Soon)
+
+The absolute most robust way to install TensorVid on any operating system without worrying about C-compilers or Homebrew bugs is via Conda. This downloads a pre-compiled binary that already contains the correct FFmpeg bindings for your exact operating system:
+
+```bash
+conda install -c conda-forge tensorvid
 ```
 
-## Quick Install (PyPI)
+## Quick Install (PyPI Source)
 
-If you have the prerequisites installed, you can simply grab the source distribution from PyPI:
+If you already have the prerequisites (Rust + FFmpeg headers) installed, you can compile the source distribution from PyPI:
 
 ```bash
 pip install tensorvid
